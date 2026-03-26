@@ -1,0 +1,7 @@
+interface:
+  display_name: "Workflow Playbooks"
+  short_description: "Run disciplined engineering workflows"
+  default_prompt: "Use $workflow-playbooks to execute this task through a disciplined workflow instead of ad hoc steps."
+
+policy:
+  allow_implicit_invocation: true

@@ -27,6 +27,10 @@ The AI agent must behave like a disciplined senior engineer, not a code generato
 - Add succinct documentation where future maintainers need context.
 - Treat database design, auth, API contracts, and SEO as first-class concerns.
 - Do not ship shortcuts that create hidden coupling or future rewrite pressure.
+- Preserve the project structure and architectural intent in every change.
+- Think through the full request professionally before writing code.
+- Do not write random code, duplicate logic casually, or patch symptoms without understanding the system.
+- Implement changes as a professional engineer would: coherent, connected, and structurally consistent.
 
 ## Research rules
 
@@ -34,6 +38,8 @@ The AI agent must behave like a disciplined senior engineer, not a code generato
 - Prefer official documentation and other primary sources.
 - For auth and security-sensitive work, verify current guidance before implementation.
 - For React, Next.js, metadata, SEO, and caching behavior, verify current official guidance before implementation when details may have changed.
+- If a better library, safer package, or newer official pattern may exist for the task, search the web before deciding.
+- Use web research to confirm best libraries, latest stable releases, and current best practices when the choice is time-sensitive.
 
 ## Skill usage rules
 
@@ -42,6 +48,20 @@ The AI agent must behave like a disciplined senior engineer, not a code generato
 - Do not improvise around an existing skill when the skill already covers the concern.
 - For cross-cutting work, apply architecture skill first, then concern-specific skills.
 - For review tasks, use the appropriate review/refactor skill in addition to the concern skill.
+- For implementation tasks, use `.codex/skills/workflow-playbooks` to follow a repeatable execution path.
+
+## Rules system
+
+The repo includes `.codex/rules/` as a rulepack layer beneath this file.
+
+Use it as follows:
+- `00-*` priority and decision rules first
+- `10-*` execution workflow rules second
+- `20-*` and `22-*` concern-specific implementation rules next
+- `30-*` and `31-*` quality and security gates before finishing
+- `40-*` for reviews
+- `50-*` and `60-*` for done criteria and placement discipline
+- `61-*` and `62-*` for naming and comments during editing
 
 ## Backend standards
 
@@ -83,6 +103,15 @@ No work is complete if any relevant gate is missing:
 - documentation updates where needed
 - performance and security review for affected paths
 - SEO review for search-facing frontend changes
+- follow-on impact review after the main change
+- confirmation that related files, imports, contracts, tests, docs, routes, metadata, and configs do not also need updates
+
+## Thinking rules
+
+- Think in English for technical reasoning, planning, and implementation decisions.
+- When the request is in English, process it in English-first technical terms for maximum precision.
+- Before finishing any task, ask whether the change requires extra updates elsewhere in the project.
+- Always prefer the best current standard in naming, structure, testing, documentation, security, performance, and SEO.
 
 ## Skill routing rules
 
@@ -115,6 +144,7 @@ No work is complete if any relevant gate is missing:
 - If the task touches external APIs, webhooks, provider SDKs, integration retries, anti-corruption boundaries, or third-party integration reliability, use `.codex/skills/third-party-integrations`.
 - If the task touches feature flags, runtime toggles, system settings, configurable behavior, or backend-managed product configuration, use `.codex/skills/feature-flags-settings-management`.
 - If the task touches React, Next.js, frontend architecture, App Router, components, forms, client state, server state, accessibility, UI structure, auth-aware frontend behavior, frontend performance, or frontend testing, use `.codex/skills/react-nextjs-frontend`.
+- If the task needs a disciplined implementation path for new features, bug fixes, backend modules, frontend pages, SEO work, refactors, or reviews, use `.codex/skills/workflow-playbooks`.
 - If the task touches frontend coding style, naming, file organization, readability, comment quality, or maintainability standards in Next.js or React code, use `.codex/skills/frontend-coding-standards`.
 - If the task touches Next.js route structure, App Router organization, route groups, layouts, loading boundaries, metadata, or overall app layout architecture, use `.codex/skills/nextjs-app-architecture`.
 - If the task touches shared UI primitives, design tokens, component variants, visual consistency, or design-system structure, use `.codex/skills/ui-design-system`.
