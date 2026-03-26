@@ -1,0 +1,7 @@
+interface:
+  display_name: "Background Jobs & Queues"
+  short_description: "Design safe async backend workflows"
+  default_prompt: "Use $background-jobs-queues-scheduling to design or review queue-backed jobs and scheduled backend workflows."
+
+policy:
+  allow_implicit_invocation: true

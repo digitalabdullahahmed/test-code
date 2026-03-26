@@ -1,0 +1,7 @@
+interface:
+  display_name: "SEO & Metadata"
+  short_description: "Optimize search and sharing behavior"
+  default_prompt: "Use $seo-metadata-social-sharing to design or review SEO and metadata behavior for this Next.js frontend."
+
+policy:
+  allow_implicit_invocation: true

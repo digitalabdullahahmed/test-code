@@ -1,0 +1,7 @@
+interface:
+  display_name: "Internationalization"
+  short_description: "Build locale-aware multilingual UI"
+  default_prompt: "Use $internationalization-localization to design or review localization and locale behavior in this frontend."
+
+policy:
+  allow_implicit_invocation: true

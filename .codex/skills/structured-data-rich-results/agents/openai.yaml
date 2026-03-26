@@ -1,0 +1,7 @@
+interface:
+  display_name: "Structured Data & Rich Results"
+  short_description: "Add search-readable entity markup"
+  default_prompt: "Use $structured-data-rich-results to implement or review JSON-LD and structured search metadata for this frontend."
+
+policy:
+  allow_implicit_invocation: true

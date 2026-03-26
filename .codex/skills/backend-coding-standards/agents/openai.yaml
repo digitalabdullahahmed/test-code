@@ -1,0 +1,7 @@
+interface:
+  display_name: "Backend Coding Standards"
+  short_description: "Keep backend code readable and strict"
+  default_prompt: "Use $backend-coding-standards to write or review backend code with strong naming, comment, and maintainability discipline."
+
+policy:
+  allow_implicit_invocation: true

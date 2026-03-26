@@ -1,0 +1,7 @@
+interface:
+  display_name: "REST Controller Patterns"
+  short_description: "Structure clean NestJS request flows"
+  default_prompt: "Use $rest-controller-service-patterns to implement clean controller and service boundaries for this NestJS backend."
+
+policy:
+  allow_implicit_invocation: true

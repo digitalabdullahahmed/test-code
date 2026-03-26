@@ -1,0 +1,7 @@
+interface:
+  display_name: "Database & ORM"
+  short_description: "Design production-grade persistence"
+  default_prompt: "Use $database-orm to design and implement the database schema, migrations, relationships, and ORM layer for this project."
+
+policy:
+  allow_implicit_invocation: true

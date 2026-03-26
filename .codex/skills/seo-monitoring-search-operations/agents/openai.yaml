@@ -1,0 +1,7 @@
+interface:
+  display_name: "SEO Monitoring & Ops"
+  short_description: "Keep search output healthy over time"
+  default_prompt: "Use $seo-monitoring-search-operations to review and monitor the operational quality of SEO on this frontend."
+
+policy:
+  allow_implicit_invocation: true

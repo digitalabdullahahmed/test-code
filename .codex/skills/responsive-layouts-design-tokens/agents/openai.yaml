@@ -1,0 +1,7 @@
+interface:
+  display_name: "Responsive Layouts"
+  short_description: "Build token-driven responsive UI"
+  default_prompt: "Use $responsive-layouts-design-tokens to design responsive layouts and shared design tokens for this frontend."
+
+policy:
+  allow_implicit_invocation: true

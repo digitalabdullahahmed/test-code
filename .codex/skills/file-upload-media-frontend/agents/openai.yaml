@@ -1,0 +1,7 @@
+interface:
+  display_name: "File Upload UX"
+  short_description: "Design clean upload and media flows"
+  default_prompt: "Use $file-upload-media-frontend to implement or review file upload and media interaction UX in this frontend."
+
+policy:
+  allow_implicit_invocation: true

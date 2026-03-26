@@ -1,0 +1,19 @@
+{
+  "name": "test-code",
+  "private": true,
+  "packageManager": "pnpm@10.32.1",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "dev:web": "pnpm --filter @workspace/web dev",
+    "dev:api": "pnpm --filter @workspace/api start:dev",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test"
+  },
+  "devDependencies": {
+    "@types/node": "25.5.0",
+    "turbo": "2.8.20",
+    "typescript": "6.0.2"
+  }
+}

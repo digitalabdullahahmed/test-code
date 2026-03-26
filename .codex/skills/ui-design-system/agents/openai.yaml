@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Design System"
+  short_description: "Build scalable shared UI primitives"
+  default_prompt: "Use $ui-design-system to design or review shared UI primitives and design-system structure for this frontend."
+
+policy:
+  allow_implicit_invocation: true

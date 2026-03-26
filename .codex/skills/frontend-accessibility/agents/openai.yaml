@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Accessibility"
+  short_description: "Keep UI accessible and inclusive"
+  default_prompt: "Use $frontend-accessibility to review or improve accessibility in this Next.js frontend."
+
+policy:
+  allow_implicit_invocation: true

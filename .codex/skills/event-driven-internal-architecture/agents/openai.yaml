@@ -1,0 +1,7 @@
+interface:
+  display_name: "Internal Event Architecture"
+  short_description: "Design safe event-driven module workflows"
+  default_prompt: "Use $event-driven-internal-architecture to design or review internal event-driven workflows in this modular monolith."
+
+policy:
+  allow_implicit_invocation: true

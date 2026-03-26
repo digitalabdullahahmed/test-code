@@ -1,0 +1,7 @@
+interface:
+  display_name: "Audit Logging & Observability"
+  short_description: "Add backend diagnostics and audit trails"
+  default_prompt: "Use $audit-logging-observability to implement or review logging, audit trails, and observability for this backend."
+
+policy:
+  allow_implicit_invocation: true

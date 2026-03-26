@@ -1,0 +1,7 @@
+interface:
+  display_name: "CI/CD & Release"
+  short_description: "Automate safe backend delivery"
+  default_prompt: "Use $ci-cd-release-deployment to design or review CI/CD and release workflows for this backend."
+
+policy:
+  allow_implicit_invocation: true

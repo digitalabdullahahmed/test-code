@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Performance"
+  short_description: "Tune rendering and bundle performance"
+  default_prompt: "Use $frontend-performance-optimization to review or improve performance in this Next.js frontend."
+
+policy:
+  allow_implicit_invocation: true

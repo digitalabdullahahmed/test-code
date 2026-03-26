@@ -1,0 +1,7 @@
+interface:
+  display_name: "Code Review & Refactor"
+  short_description: "Raise backend code quality"
+  default_prompt: "Use $code-review-refactor-standards to review or refactor backend code for maintainability, naming, and architectural quality."
+
+policy:
+  allow_implicit_invocation: true

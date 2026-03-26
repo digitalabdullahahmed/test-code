@@ -1,0 +1,7 @@
+interface:
+  display_name: "Config & Secrets"
+  short_description: "Manage backend config safely"
+  default_prompt: "Use $configuration-env-secrets-management to implement or review backend configuration and secret handling."
+
+policy:
+  allow_implicit_invocation: true

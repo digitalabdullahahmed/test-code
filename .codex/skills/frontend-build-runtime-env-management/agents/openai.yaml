@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Env & Runtime"
+  short_description: "Manage frontend config safely"
+  default_prompt: "Use $frontend-build-runtime-env-management to implement or review frontend environment and runtime configuration."
+
+policy:
+  allow_implicit_invocation: true
