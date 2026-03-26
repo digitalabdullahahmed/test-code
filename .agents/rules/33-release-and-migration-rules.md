@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Release And Migration Rules
 
 - plan schema and runtime changes for safe rollout, not only local correctness

@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Priority Model
 
 Use these priorities when tradeoffs conflict:

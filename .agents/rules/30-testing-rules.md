@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Testing Rules
 
 - no high-risk change is complete without verification
@@ -8,3 +12,4 @@
 - always run the strongest realistic verification before claiming completion
 - use multiple verification methods when the change affects multiple layers
 - do not stop at one passing check if typecheck, tests, build, or route validation are also relevant
+

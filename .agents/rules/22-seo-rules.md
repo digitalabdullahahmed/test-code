@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # SEO Rules
 
 - search-facing pages need explicit metadata
@@ -6,3 +10,4 @@
 - use structured data only when it matches page reality
 - noindex low-value or private surfaces intentionally
 - validate what bots see, not only browser output
+

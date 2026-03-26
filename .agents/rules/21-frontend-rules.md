@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Frontend Rules
 
 - keep `app/` route-focused and thin
@@ -8,3 +12,4 @@
 - design for accessibility, responsive behavior, and performance
 - avoid generic AI-looking output
 - use deliberate visual direction
+

@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Backend Rules
 
 - keep controllers thin
@@ -8,3 +12,4 @@
 - name files and services by business purpose
 - do not turn `common` into a dumping ground
 - add tests for risk-bearing paths
+

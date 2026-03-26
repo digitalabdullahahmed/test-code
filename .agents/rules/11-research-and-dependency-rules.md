@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Research And Dependency Rules
 
 - search the web when choosing libraries, frameworks, provider SDKs, or version-sensitive patterns

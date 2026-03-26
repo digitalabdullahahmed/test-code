@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Package Selection Rules
 
 - add a dependency only when the platform, framework, or existing workspace code does not already solve the problem cleanly
@@ -9,3 +13,4 @@
 - prefer libraries that support tree-shaking, server-safe usage, and predictable security posture
 - when adding a new package, document why it was chosen and what alternatives were rejected if the decision is non-obvious
 - review whether the dependency belongs in a single app, a shared package, or should stay out of the workspace entirely
+

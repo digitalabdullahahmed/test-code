@@ -1,3 +1,7 @@
+---
+trigger: always_on
+---
+
 # Definition Of Done
 
 A task is not done until all relevant items are satisfied:
@@ -9,3 +13,4 @@ A task is not done until all relevant items are satisfied:
 - naming and structure are acceptable
 - documentation or metadata is updated when needed
 - unresolved risks are called out explicitly
+
