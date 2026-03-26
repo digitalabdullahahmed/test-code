@@ -1,0 +1,7 @@
+interface:
+  display_name: "Docker Runtime"
+  short_description: "Containerize backend services cleanly"
+  default_prompt: "Use $docker-infrastructure-runtime to design or review Docker runtime setup for this backend."
+
+policy:
+  allow_implicit_invocation: true

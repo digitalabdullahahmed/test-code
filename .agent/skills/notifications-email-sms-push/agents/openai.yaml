@@ -1,0 +1,7 @@
+interface:
+  display_name: "Notifications"
+  short_description: "Design reliable backend notifications"
+  default_prompt: "Use $notifications-email-sms-push to implement or review email, SMS, or push notification workflows."
+
+policy:
+  allow_implicit_invocation: true

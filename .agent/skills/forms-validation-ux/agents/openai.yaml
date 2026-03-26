@@ -1,0 +1,7 @@
+interface:
+  display_name: "Forms & Validation UX"
+  short_description: "Build strong form experiences"
+  default_prompt: "Use $forms-validation-ux to design or review forms, validation, and mutation UX in this frontend."
+
+policy:
+  allow_implicit_invocation: true

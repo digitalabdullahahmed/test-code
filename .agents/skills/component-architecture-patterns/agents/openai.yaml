@@ -1,0 +1,7 @@
+interface:
+  display_name: "Component Architecture"
+  short_description: "Structure React modules cleanly"
+  default_prompt: "Use $component-architecture-patterns to design or review React component boundaries and module structure for this frontend."
+
+policy:
+  allow_implicit_invocation: true

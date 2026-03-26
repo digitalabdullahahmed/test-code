@@ -1,0 +1,7 @@
+interface:
+  display_name: "Storybook Documentation"
+  short_description: "Document shared UI components well"
+  default_prompt: "Use $storybook-component-documentation to create or review component documentation and Storybook coverage for this frontend."
+
+policy:
+  allow_implicit_invocation: true

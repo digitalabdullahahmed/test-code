@@ -1,0 +1,7 @@
+interface:
+  display_name: "Realtime Frontend"
+  short_description: "Design stable live UI behavior"
+  default_prompt: "Use $realtime-websocket-frontend to design or review realtime UI behavior in this frontend."
+
+policy:
+  allow_implicit_invocation: true

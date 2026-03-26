@@ -1,0 +1,7 @@
+interface:
+  display_name: "React & Next.js Frontend"
+  short_description: "Build production-grade frontend"
+  default_prompt: "Use $react-nextjs-frontend to design and implement a production-grade React and Next.js frontend for this project."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Validation & Error Handling"
+  short_description: "Enforce request and response correctness"
+  default_prompt: "Use $validation-serialization-error-handling to implement validation, serialization, and stable error handling for this backend."
+
+policy:
+  allow_implicit_invocation: true

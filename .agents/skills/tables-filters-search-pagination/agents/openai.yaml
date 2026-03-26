@@ -1,0 +1,7 @@
+interface:
+  display_name: "Tables & Search UI"
+  short_description: "Design strong list and grid UX"
+  default_prompt: "Use $tables-filters-search-pagination to design or review list, table, filter, and search UI for this frontend."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Transactions & Idempotency"
+  short_description: "Protect backend consistency under concurrency"
+  default_prompt: "Use $transactions-concurrency-idempotency to design or review consistency, locking, and idempotency for this backend."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "NestJS Modular Monolith"
+  short_description: "Design production-grade backend structure"
+  default_prompt: "Use $nestjs-modular-monolith-architecture to design and implement a production-grade NestJS modular monolith backend for this project."
+
+policy:
+  allow_implicit_invocation: true

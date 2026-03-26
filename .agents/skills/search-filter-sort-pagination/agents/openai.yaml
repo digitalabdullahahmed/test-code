@@ -1,0 +1,7 @@
+interface:
+  display_name: "Search & Pagination"
+  short_description: "Design strong backend list endpoints"
+  default_prompt: "Use $search-filter-sort-pagination to design or review search, filter, sort, and pagination behavior for this backend."
+
+policy:
+  allow_implicit_invocation: true

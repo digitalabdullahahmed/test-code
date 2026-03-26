@@ -1,0 +1,7 @@
+interface:
+  display_name: "Authentication & Authorization"
+  short_description: "Build production-grade NestJS auth"
+  default_prompt: "Use $authentication-authorization to design and implement complete NestJS authentication, authorization, API key auth, and token rotation for this REST API."
+
+policy:
+  allow_implicit_invocation: true

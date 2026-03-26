@@ -1,0 +1,7 @@
+interface:
+  display_name: "UI Governance"
+  short_description: "Keep frontend design quality coherent"
+  default_prompt: "Use $design-hand-off-and-ui-governance to review or improve design consistency and UI governance for this frontend."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Data Fetching & State"
+  short_description: "Design modern Next.js data flow"
+  default_prompt: "Use $frontend-data-fetching-state-management to design or review data fetching and state management for this Next.js frontend."
+
+policy:
+  allow_implicit_invocation: true

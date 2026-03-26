@@ -1,0 +1,7 @@
+interface:
+  display_name: "SEO Content Architecture"
+  short_description: "Design search-facing page structure"
+  default_prompt: "Use $seo-content-information-architecture to design or review internal linking and on-page SEO structure for this frontend."
+
+policy:
+  allow_implicit_invocation: true

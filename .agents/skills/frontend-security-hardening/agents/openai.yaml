@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Security"
+  short_description: "Harden browser-facing app behavior"
+  default_prompt: "Use $frontend-security-hardening to review and harden the security posture of this frontend."
+
+policy:
+  allow_implicit_invocation: true

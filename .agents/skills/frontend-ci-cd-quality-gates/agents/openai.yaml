@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend CI/CD"
+  short_description: "Automate frontend quality safely"
+  default_prompt: "Use $frontend-ci-cd-quality-gates to design or review CI/CD and quality gates for this frontend."
+
+policy:
+  allow_implicit_invocation: true

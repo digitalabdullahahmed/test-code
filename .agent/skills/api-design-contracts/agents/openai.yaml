@@ -1,0 +1,7 @@
+interface:
+  display_name: "API Design & Contracts"
+  short_description: "Design stable REST APIs"
+  default_prompt: "Use $api-design-contracts to design or review the REST API contract for this backend."
+
+policy:
+  allow_implicit_invocation: true

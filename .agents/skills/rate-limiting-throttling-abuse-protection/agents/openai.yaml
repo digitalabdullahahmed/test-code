@@ -1,0 +1,7 @@
+interface:
+  display_name: "Rate Limiting & Abuse Protection"
+  short_description: "Defend backend endpoints against abuse"
+  default_prompt: "Use $rate-limiting-throttling-abuse-protection to design or review throttling and abuse controls for this backend."
+
+policy:
+  allow_implicit_invocation: true

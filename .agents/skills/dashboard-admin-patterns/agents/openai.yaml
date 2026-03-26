@@ -1,0 +1,7 @@
+interface:
+  display_name: "Dashboard & Admin Patterns"
+  short_description: "Design strong internal product interfaces"
+  default_prompt: "Use $dashboard-admin-patterns to design or review dashboard and admin UX for this Next.js frontend."
+
+policy:
+  allow_implicit_invocation: true

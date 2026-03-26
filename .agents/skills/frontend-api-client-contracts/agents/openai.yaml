@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend API Client"
+  short_description: "Centralize typed API consumption"
+  default_prompt: "Use $frontend-api-client-contracts to design or review the API client layer for this frontend."
+
+policy:
+  allow_implicit_invocation: true

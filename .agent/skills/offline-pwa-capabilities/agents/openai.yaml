@@ -1,0 +1,7 @@
+interface:
+  display_name: "Offline & PWA"
+  short_description: "Design installable resilient frontend behavior"
+  default_prompt: "Use $offline-pwa-capabilities to design or review offline and PWA behavior for this frontend."
+
+policy:
+  allow_implicit_invocation: true

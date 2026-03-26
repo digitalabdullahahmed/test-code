@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Flags & Experiments"
+  short_description: "Manage rollout-aware UI safely"
+  default_prompt: "Use $feature-flags-experiments-frontend to design or review feature flags and experiments in this frontend."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Error Resilience"
+  short_description: "Design strong loading and error UX"
+  default_prompt: "Use $frontend-error-handling-resilience to implement or review loading, error, and resilience patterns in this frontend."
+
+policy:
+  allow_implicit_invocation: true

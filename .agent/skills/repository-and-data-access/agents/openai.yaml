@@ -1,0 +1,7 @@
+interface:
+  display_name: "Repository & Data Access"
+  short_description: "Design clean persistence boundaries"
+  default_prompt: "Use $repository-and-data-access to implement or review repositories and persistence flows for this backend."
+
+policy:
+  allow_implicit_invocation: true

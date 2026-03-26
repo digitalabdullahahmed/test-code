@@ -1,0 +1,7 @@
+interface:
+  display_name: "Motion & Interaction"
+  short_description: "Design meaningful frontend motion"
+  default_prompt: "Use $animation-motion-interaction-patterns to design or review animation and interaction behavior in this frontend."
+
+policy:
+  allow_implicit_invocation: true

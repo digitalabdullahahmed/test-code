@@ -1,0 +1,7 @@
+interface:
+  display_name: "API Documentation"
+  short_description: "Keep OpenAPI docs production-grade"
+  default_prompt: "Use $api-documentation-openapi-swagger to implement or review generated API documentation for this backend."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Integrations"
+  short_description: "Add browser-side providers safely"
+  default_prompt: "Use $frontend-third-party-integrations to design or review third-party browser integrations in this frontend."
+
+policy:
+  allow_implicit_invocation: true

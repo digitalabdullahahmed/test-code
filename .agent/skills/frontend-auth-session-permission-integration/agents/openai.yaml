@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Auth Integration"
+  short_description: "Connect UI cleanly to backend auth"
+  default_prompt: "Use $frontend-auth-session-permission-integration to implement or review auth and session behavior in this frontend."
+
+policy:
+  allow_implicit_invocation: true

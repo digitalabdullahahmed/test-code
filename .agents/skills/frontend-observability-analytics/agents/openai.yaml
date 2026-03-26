@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Observability"
+  short_description: "Add analytics and client diagnostics"
+  default_prompt: "Use $frontend-observability-analytics to design or review telemetry, analytics, and diagnostics for this frontend."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Security Hardening"
+  short_description: "Harden backend security defaults"
+  default_prompt: "Use $security-hardening to review and harden the security posture of this backend."
+
+policy:
+  allow_implicit_invocation: true

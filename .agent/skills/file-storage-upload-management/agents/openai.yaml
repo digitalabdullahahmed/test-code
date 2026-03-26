@@ -1,0 +1,7 @@
+interface:
+  display_name: "File Storage & Uploads"
+  short_description: "Build safe backend file workflows"
+  default_prompt: "Use $file-storage-upload-management to implement or review backend file upload and storage flows."
+
+policy:
+  allow_implicit_invocation: true

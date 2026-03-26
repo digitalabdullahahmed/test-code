@@ -1,0 +1,7 @@
+interface:
+  display_name: "Routing & Middleware Guards"
+  short_description: "Control Next.js route access cleanly"
+  default_prompt: "Use $routing-navigation-middleware-guards to design or review routing and route protection for this Next.js frontend."
+
+policy:
+  allow_implicit_invocation: true

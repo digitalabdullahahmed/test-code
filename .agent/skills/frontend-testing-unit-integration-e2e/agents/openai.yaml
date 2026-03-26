@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Testing"
+  short_description: "Build strong frontend test coverage"
+  default_prompt: "Use $frontend-testing-unit-integration-e2e to add or review frontend tests for this Next.js project."
+
+policy:
+  allow_implicit_invocation: true

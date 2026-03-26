@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Coding Standards"
+  short_description: "Keep Next.js code clear and strict"
+  default_prompt: "Use $frontend-coding-standards to write or review React and Next.js code with strong naming and maintainability discipline."
+
+policy:
+  allow_implicit_invocation: true

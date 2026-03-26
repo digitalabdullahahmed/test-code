@@ -1,0 +1,7 @@
+interface:
+  display_name: "Frontend Review & Refactor"
+  short_description: "Raise frontend code quality"
+  default_prompt: "Use $frontend-code-review-refactor-standards to review or refactor frontend code for maintainability and product quality."
+
+policy:
+  allow_implicit_invocation: true

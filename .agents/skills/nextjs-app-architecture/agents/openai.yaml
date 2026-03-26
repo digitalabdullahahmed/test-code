@@ -1,0 +1,7 @@
+interface:
+  display_name: "Next.js App Architecture"
+  short_description: "Design modern App Router structure"
+  default_prompt: "Use $nextjs-app-architecture to design the App Router structure and route architecture for this Next.js project."
+
+policy:
+  allow_implicit_invocation: true

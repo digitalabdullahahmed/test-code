@@ -1,0 +1,7 @@
+interface:
+  display_name: "Domain Module Design"
+  short_description: "Model strong backend domain boundaries"
+  default_prompt: "Use $domain-driven-module-design to design clear domain-focused modules for this NestJS backend."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Caching & Performance"
+  short_description: "Tune backend performance safely"
+  default_prompt: "Use $caching-performance to review or improve backend performance and cache strategy."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Third-Party Integrations"
+  short_description: "Build reliable provider integrations"
+  default_prompt: "Use $third-party-integrations to design or review external provider integrations for this backend."
+
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,7 @@
+interface:
+  display_name: "Backend Testing"
+  short_description: "Build strong NestJS test coverage"
+  default_prompt: "Use $testing-unit-integration-e2e to add or review backend tests for this NestJS project."
+
+policy:
+  allow_implicit_invocation: true

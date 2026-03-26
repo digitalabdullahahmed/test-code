@@ -1,0 +1,7 @@
+interface:
+  display_name: "Feature Flags & Settings"
+  short_description: "Manage backend runtime behavior safely"
+  default_prompt: "Use $feature-flags-settings-management to design or review feature flags and runtime settings for this backend."
+
+policy:
+  allow_implicit_invocation: true
