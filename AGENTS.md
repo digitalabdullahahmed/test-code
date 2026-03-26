@@ -36,6 +36,7 @@ The AI agent must behave like a disciplined senior engineer, not a code generato
 
 - If a task depends on unstable facts, package versions, framework behavior, browser behavior, search-engine behavior, security guidance, or provider APIs, search the web first.
 - Prefer official documentation and other primary sources.
+- Prefer `Context7` first for current library, framework, and package documentation when it is available.
 - For auth and security-sensitive work, verify current guidance before implementation.
 - For React, Next.js, metadata, SEO, and caching behavior, verify current official guidance before implementation when details may have changed.
 - If a better library, safer package, or newer official pattern may exist for the task, search the web before deciding.
@@ -57,11 +58,20 @@ The repo includes `.codex/rules/` as a rulepack layer beneath this file.
 Use it as follows:
 - `00-*` priority and decision rules first
 - `10-*` execution workflow rules second
+- `11-*` to `14-*` for research, dependencies, impact, and `Context7`
 - `20-*` and `22-*` concern-specific implementation rules next
-- `30-*` and `31-*` quality and security gates before finishing
-- `40-*` for reviews
+- `30-*` to `34-*` for quality, security, release, and breaking-change gates before finishing
+- `40-*` and `41-*` for reviews and documentation expectations
 - `50-*` and `60-*` for done criteria and placement discipline
 - `61-*` and `62-*` for naming and comments during editing
+
+## Context7 rules
+
+- Use `Context7` for library and framework documentation research before generic web search when it is available.
+- Use `Context7` when evaluating package APIs, setup steps, configuration patterns, migration notes, and version-specific usage.
+- Prefer the `resolve-library-id` then `query-docs` flow for MCP-based research.
+- If `Context7` is incomplete, fall back to official docs and other primary sources.
+- Treat `Context7` as a documentation accelerator, not as a replacement for repo-local reasoning or security judgment.
 
 ## Backend standards
 
@@ -105,6 +115,8 @@ No work is complete if any relevant gate is missing:
 - SEO review for search-facing frontend changes
 - follow-on impact review after the main change
 - confirmation that related files, imports, contracts, tests, docs, routes, metadata, and configs do not also need updates
+- release and migration safety review for rollout-sensitive changes
+- breaking-change review for contracts, schema, routes, env vars, and shared packages
 
 ## Thinking rules
 
@@ -142,6 +154,7 @@ No work is complete if any relevant gate is missing:
 - If the task touches Docker, container runtime behavior, local development containers, production containerization, health checks, runtime images, or service startup behavior, use `.codex/skills/docker-infrastructure-runtime`.
 - If the task touches CI, CD, pipelines, release safety, build verification, deployment workflows, or environment promotion, use `.codex/skills/ci-cd-release-deployment`.
 - If the task touches external APIs, webhooks, provider SDKs, integration retries, anti-corruption boundaries, or third-party integration reliability, use `.codex/skills/third-party-integrations`.
+- If the task depends on current library or framework documentation, package selection, migration notes, setup steps, or version-specific API behavior, use `.codex/skills/context7-docs-research`.
 - If the task touches feature flags, runtime toggles, system settings, configurable behavior, or backend-managed product configuration, use `.codex/skills/feature-flags-settings-management`.
 - If the task touches React, Next.js, frontend architecture, App Router, components, forms, client state, server state, accessibility, UI structure, auth-aware frontend behavior, frontend performance, or frontend testing, use `.codex/skills/react-nextjs-frontend`.
 - If the task needs a disciplined implementation path for new features, bug fixes, backend modules, frontend pages, SEO work, refactors, or reviews, use `.codex/skills/workflow-playbooks`.

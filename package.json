@@ -9,7 +9,9 @@
     "build": "turbo run build",
     "lint": "turbo run lint",
     "typecheck": "turbo run typecheck",
-    "test": "turbo run test"
+    "test": "turbo run test",
+    "context7:setup": "npx ctx7 setup",
+    "context7:mcp": "npx @upstash/context7-mcp"
   },
   "devDependencies": {
     "@types/node": "25.5.0",
