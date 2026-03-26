@@ -1,5 +1,10 @@
 # Architecture Overview
 
+Related docs:
+- `/PROJECT_VISION.md`
+- `/docs/architecture/tech-stack.md`
+- `/AGENTS.md`
+
 ## Monorepo
 
 - `apps/web` owns the Next.js frontend.

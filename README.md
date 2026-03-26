@@ -1,32 +1,84 @@
 # Workspace
 
-Production-oriented monorepo scaffold for:
+Production-oriented monorepo scaffold for a serious product built with:
 
-- `Next.js 16` frontend with App Router and feature modules
-- `NestJS 11` backend with modular-monolith foundations
+- `Next.js 16` frontend
+- `NestJS 11` backend
 - shared workspace packages for contracts, types, and utilities
 
-## Apps
+This repository is designed to grow into a production-grade system with strong architecture, testing discipline, documentation, and operational safety.
+
+## What this repo is for
+
+- building a modular `NestJS` backend
+- building a high-quality `Next.js` frontend
+- sharing stable contracts and types across apps
+- enforcing strong engineering standards through rules, skills, and workflows
+
+## Primary stack
+
+### Backend
+
+- framework: `NestJS`
+- style: `RESTful API`
+- architecture: `modular monolith`
+- data direction: `PostgreSQL + Prisma`
+- admin direction: `AdminJS` for internal administration when needed
+- baseline inspiration: `brocoders/nestjs-boilerplate`
+
+### Frontend
+
+- framework: `Next.js`
+- router: `App Router`
+- rendering direction: `Server Components first`
+- feature organization: module-based frontend structure
+
+### Workspace
+
+- package manager: `pnpm`
+- build orchestration: `turbo`
+
+## Repository structure
 
 - `apps/web`: Next.js frontend
 - `apps/api`: NestJS backend
-
-## Packages
-
 - `packages/contracts`: shared API contract types
 - `packages/types`: shared cross-app types
 - `packages/utils`: shared framework-agnostic utilities
+- `.codex/skills`: local engineering skills
+- `.codex/rules`: local engineering rules
+- `docs/`: architecture and operational documentation
+
+## Core documents
+
+- [PROJECT_VISION.md](/Client Projects/test-code/PROJECT_VISION.md): project purpose, engineering direction, and product intent
+- [overview.md](/Client Projects/test-code/docs/architecture/overview.md): architecture summary
+- [tech-stack.md](/Client Projects/test-code/docs/architecture/tech-stack.md): backend, frontend, tooling, and planned stack decisions
+- [context7-mcp.md](/Client Projects/test-code/docs/context7-mcp.md): `Context7` documentation workflow
+- [AGENTS.md](/Client Projects/test-code/AGENTS.md): central execution and quality rules for the coding agent
 
 ## Commands
 
 - `pnpm install`
 - `pnpm dev`
+- `pnpm dev:web`
+- `pnpm dev:api`
 - `pnpm build`
 - `pnpm lint`
 - `pnpm typecheck`
+- `pnpm test`
+- `pnpm context7:setup`
+- `pnpm context7:mcp`
 
-## Architecture notes
+## Engineering principles
 
-- Keep `app/` thin in the frontend. Feature logic lives in `src/modules`.
-- Keep NestJS modules cohesive. Platform concerns stay explicit.
-- Use shared packages only for stable cross-app code.
+- keep architecture explicit and modular
+- keep `app/` thin in the frontend and move feature logic into modules
+- keep NestJS modules cohesive and avoid dumping logic into shared buckets
+- prefer explicit contracts, validation, and structured errors
+- verify changes before claiming completion
+- update documentation when behavior or decisions change
+
+## Current state
+
+The repository currently contains the monorepo scaffold, initial `NestJS` and `Next.js` app foundations, SEO scaffold for the frontend, and a strong local rules-and-skills system for guided implementation.
