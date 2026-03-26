@@ -57,6 +57,22 @@ This repository is designed to grow into a production-grade system with strong a
 - [context7-mcp.md](/Client Projects/test-code/docs/context7-mcp.md): `Context7` documentation workflow
 - [AGENTS.md](/Client Projects/test-code/AGENTS.md): central execution and quality rules for the coding agent
 
+## Agent workflows
+
+Repository-specific execution workflows live in `.agents/workflows/`.
+
+- `project-implementation.md`: default disciplined implementation workflow
+- `bugfix-diagnose-first.md`: bug investigation workflow that stops after root-cause analysis and proposed fix
+- `bugfix-diagnose-and-fix.md`: bug investigation plus direct implementation workflow
+- `feature-brainstorm-plan-first.md`: step-by-step feature planning workflow that waits for approval
+- `feature-brainstorm-and-implement.md`: step-by-step feature planning plus direct implementation workflow
+- `security-audit.md`: professional security review workflow
+- `seo-audit.md`: deep SEO review workflow
+- `frontend-audit.md`: comprehensive frontend review workflow
+- `code-review-refactor.md`: findings-first code review and refactor review workflow
+- `documentation.md`: strong documentation writing and update workflow
+- `test-implementation.md`: risk-based test design and implementation workflow
+
 ## Commands
 
 - `pnpm install`
