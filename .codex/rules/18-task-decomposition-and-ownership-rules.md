@@ -6,3 +6,4 @@
 - prefer a narrow vertical slice with clear ownership over broad parallel churn
 - identify cross-cutting concerns early so they are not bolted on at the end
 - do not let frontend, backend, and shared code drift independently when they belong to the same feature
+- identify prerequisites and owning modules before choosing the first implementation step

@@ -6,3 +6,4 @@
 - identify missing but important assumptions early and choose the safest reasonable assumption unless the ambiguity is truly blocking
 - do not optimize for visible output while missing the actual requested capability
 - if the task implies backend, frontend, contracts, auth, SEO, or operational changes, recognize those surfaces before implementation starts
+- determine whether the request is a new capability, an extension of an existing module, or only a local change

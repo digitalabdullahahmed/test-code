@@ -62,7 +62,7 @@ The repo includes `.codex/rules/` as a rulepack layer beneath this file.
 Use it as follows:
 - `00-*` priority and decision rules first
 - `10-*` execution workflow rules second
-- `11-*` to `19-*` for research, dependencies, impact, `Context7`, real-implementation discipline, full-stack integration, request understanding, decomposition, and acceptance criteria
+- `11-*` to `19-*` and `29-*` for research, dependencies, impact, `Context7`, real-implementation discipline, full-stack integration, request understanding, decomposition, acceptance criteria, and module/prerequisite detection
 - `20-*` to `28-*` for concern-specific implementation, module-boundary rules, full-stack feature rules, UI state rules, microcopy rules, backend reliability, and outbound resilience next
 - `30-*` to `34-*` for quality, security, release, and breaking-change gates before finishing
 - `40-*` to `42-*` for reviews, documentation expectations, and handoff discipline
@@ -139,6 +139,8 @@ No work is complete if any relevant gate is missing:
 - When the request is in English, process it in English-first technical terms for maximum precision.
 - Before finishing any task, ask whether the change requires extra updates elsewhere in the project.
 - Always prefer the best current standard in naming, structure, testing, documentation, security, performance, and SEO.
+- Before starting implementation, decide whether the request needs a new module, an extension of an existing module, or only a local change.
+- Detect and surface missing prerequisites explicitly instead of discovering them too late during implementation.
 
 ## Skill routing rules
 

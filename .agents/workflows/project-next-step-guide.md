@@ -50,7 +50,26 @@ Determine what is already present and what is missing:
 
 Do not recommend a step that assumes missing prerequisites are already done.
 
-## 4. Determine the correct next step
+## 4. Detect module and prerequisite needs
+
+Before deciding the next step, determine:
+
+- does this request belong to an existing module?
+- does it require a new backend module?
+- does it require a new frontend module?
+- does it require shared contracts or shared types?
+- are auth, permissions, schema changes, API routes, queues, or SEO prerequisites missing?
+
+The workflow must say this explicitly.
+
+Possible outputs include:
+- `this belongs in the existing users module`
+- `this requires a new alerts module`
+- `this does not need a new module, only an extension of the current pricing feature`
+- `this cannot be the next step until auth is built`
+- `this requires contracts and backend paths before frontend work`
+
+## 5. Determine the correct next step
 
 Choose the next step by dependency order, not by what sounds exciting.
 
@@ -64,22 +83,26 @@ Prefer:
 
 If the user asks for something too broad, narrow it to the best next slice.
 
-## 5. Produce a practical next-step answer
+## 6. Produce a practical next-step answer
 
 Return:
 - `Current project state`
 - `What the user is really asking for`
+- `Module decision`
+- `Missing prerequisites`
 - `Correct next step`
 - `Why this step comes next`
 - `Recommended prompt to run next`
 - `What should come after that`
 
-## 6. Important behavior rules
+## 7. Important behavior rules
 
 - do not recommend building the full app in one jump
 - do not recommend disconnected frontend screens before backend prerequisites
 - do not recommend backend expansion when foundations are still missing
 - do not recommend later-stage polish when core flows are not real yet
+- do not stay vague about whether a new module is required
+- do not hide missing prerequisites
 - keep the answer concrete and execution-oriented
 
 ## Example use cases
