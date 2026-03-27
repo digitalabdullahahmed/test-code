@@ -62,6 +62,7 @@ This repository is designed to grow into a production-grade system with strong a
 
 Repository-specific execution workflows live in `.agents/workflows/`.
 
+- `project-next-step-guide.md`: reads the repo and tells the correct next implementation step based on the user request and the current project state
 - `project-implementation.md`: default disciplined implementation workflow
 - `bugfix-diagnose-first.md`: bug investigation workflow that stops after root-cause analysis and proposed fix
 - `bugfix-diagnose-and-fix.md`: bug investigation plus direct implementation workflow
