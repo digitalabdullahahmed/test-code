@@ -21,6 +21,7 @@ Build interfaces that are:
 Before coding, define:
 - purpose
 - audience
+- user goals and primary tasks
 - tone
 - technical constraints
 - one unforgettable quality
@@ -81,6 +82,8 @@ Commit to a clear conceptual direction. Examples:
 - code must remain maintainable
 - accessibility is still required
 - mobile and desktop must both work well
+- UX clarity is required, not optional polish
+- design choices must support task completion, not only visual novelty
 - visual boldness must not destroy clarity
 
 ## Review checklist
@@ -89,5 +92,6 @@ Reject or fix:
 - generic AI-looking layout
 - default-looking typography
 - no clear design direction
+- no clear primary action or weak hierarchy
 - random motion with no system
 - decorative choices that hurt usability

@@ -31,6 +31,8 @@ The AI agent must behave like a disciplined senior engineer, not a code generato
 - Think through the full request professionally before writing code.
 - Do not write random code, duplicate logic casually, or patch symptoms without understanding the system.
 - Implement changes as a professional engineer would: coherent, connected, and structurally consistent.
+- Do not treat placeholder, mock, or TODO-only behavior as finished implementation.
+- Edit source files, not generated outputs or derived artifacts, unless the task explicitly requires generator work.
 
 ## Research rules
 
@@ -58,12 +60,12 @@ The repo includes `.codex/rules/` as a rulepack layer beneath this file.
 Use it as follows:
 - `00-*` priority and decision rules first
 - `10-*` execution workflow rules second
-- `11-*` to `14-*` for research, dependencies, impact, and `Context7`
-- `20-*` and `22-*` concern-specific implementation rules next
+- `11-*` to `15-*` for research, dependencies, impact, `Context7`, and real-implementation discipline
+- `20-*` to `23-*` for concern-specific implementation and module-boundary rules next
 - `30-*` to `34-*` for quality, security, release, and breaking-change gates before finishing
 - `40-*` and `41-*` for reviews and documentation expectations
 - `50-*` and `60-*` for done criteria and placement discipline
-- `61-*` and `62-*` for naming and comments during editing
+- `61-*` to `63-*` for naming, comments, and generated-file discipline during editing
 
 ## Context7 rules
 
@@ -117,6 +119,7 @@ No work is complete if any relevant gate is missing:
 - confirmation that related files, imports, contracts, tests, docs, routes, metadata, and configs do not also need updates
 - release and migration safety review for rollout-sensitive changes
 - breaking-change review for contracts, schema, routes, env vars, and shared packages
+- confirmation that no placeholder or fake implementation remains in finished paths
 
 ## Thinking rules
 
@@ -172,6 +175,7 @@ No work is complete if any relevant gate is missing:
 - If the task touches frontend security, secret exposure, unsafe HTML rendering, redirect safety, CSRF awareness, client-side auth risks, or browser-facing hardening, use `.codex/skills/frontend-security-hardening`.
 - If the task touches bundle size, rendering cost, hydration, lazy loading, React performance, image or font optimization, or frontend speed tuning, use `.codex/skills/frontend-performance-optimization`.
 - If the task touches responsive layouts, spacing systems, design tokens, breakpoints, layout composition, or cross-device frontend behavior, use `.codex/skills/responsive-layouts-design-tokens`.
+- If the task touches mobile behavior, tablet behavior, cross-device compatibility, touch ergonomics, viewport safety, orientation issues, or device-specific frontend resilience, use `.codex/skills/frontend-device-compatibility`.
 - If the task touches tables, data grids, search UI, filters, sort controls, pagination UI, or large-list frontend interactions, use `.codex/skills/tables-filters-search-pagination`.
 - If the task touches frontend file uploads, previews, progress UI, client-side file validation, or media interaction UX, use `.codex/skills/file-upload-media-frontend`.
 - If the task touches real-time updates, websockets, live notifications, subscriptions, optimistic live UI, or streaming frontend behavior, use `.codex/skills/realtime-websocket-frontend`.
@@ -194,3 +198,4 @@ No work is complete if any relevant gate is missing:
 - If the task touches frontend CI, CD, build gates, visual review pipelines, quality automation, or frontend deployment safety, use `.codex/skills/frontend-ci-cd-quality-gates`.
 - If the task asks for frontend review, frontend refactor, naming cleanup, UI maintainability improvements, or frontend code quality review, use `.codex/skills/frontend-code-review-refactor-standards`.
 - If the task asks for a distinctive, polished, non-generic page, component, or interface with strong visual direction, typography, motion, or atmosphere, use `.codex/skills/frontend-design`.
+- If the task needs stronger UI or UX reasoning, user-flow thinking, information hierarchy, interface research, or interaction tradeoff analysis before coding, use `.codex/skills/ui-ux-research-thinking`.
