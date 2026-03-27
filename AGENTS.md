@@ -32,6 +32,7 @@ The AI agent must behave like a disciplined senior engineer, not a code generato
 - Do not write random code, duplicate logic casually, or patch symptoms without understanding the system.
 - Implement changes as a professional engineer would: coherent, connected, and structurally consistent.
 - Do not treat placeholder, mock, or TODO-only behavior as finished implementation.
+- Do not treat disconnected frontend UI as complete when the feature is supposed to use real backend data.
 - Edit source files, not generated outputs or derived artifacts, unless the task explicitly requires generator work.
 
 ## Research rules
@@ -60,8 +61,8 @@ The repo includes `.codex/rules/` as a rulepack layer beneath this file.
 Use it as follows:
 - `00-*` priority and decision rules first
 - `10-*` execution workflow rules second
-- `11-*` to `15-*` for research, dependencies, impact, `Context7`, and real-implementation discipline
-- `20-*` to `23-*` for concern-specific implementation and module-boundary rules next
+- `11-*` to `16-*` for research, dependencies, impact, `Context7`, real-implementation discipline, and full-stack integration rules
+- `20-*` to `24-*` for concern-specific implementation, module-boundary rules, and full-stack feature rules next
 - `30-*` to `34-*` for quality, security, release, and breaking-change gates before finishing
 - `40-*` and `41-*` for reviews and documentation expectations
 - `50-*` and `60-*` for done criteria and placement discipline
@@ -120,6 +121,7 @@ No work is complete if any relevant gate is missing:
 - release and migration safety review for rollout-sensitive changes
 - breaking-change review for contracts, schema, routes, env vars, and shared packages
 - confirmation that no placeholder or fake implementation remains in finished paths
+- confirmation that data-driven frontend changes are connected to a real backend contract and verified accordingly
 
 ## Thinking rules
 
@@ -161,6 +163,7 @@ No work is complete if any relevant gate is missing:
 - If the task touches feature flags, runtime toggles, system settings, configurable behavior, or backend-managed product configuration, use `.codex/skills/feature-flags-settings-management`.
 - If the task touches React, Next.js, frontend architecture, App Router, components, forms, client state, server state, accessibility, UI structure, auth-aware frontend behavior, frontend performance, or frontend testing, use `.codex/skills/react-nextjs-frontend`.
 - If the task needs a disciplined implementation path for new features, bug fixes, backend modules, frontend pages, SEO work, refactors, or reviews, use `.codex/skills/workflow-playbooks`.
+- If the task includes both frontend UI and backend data behavior, use `.codex/skills/workflow-playbooks` and follow the `Full-stack data feature` playbook instead of treating the frontend in isolation.
 - If the task touches frontend coding style, naming, file organization, readability, comment quality, or maintainability standards in Next.js or React code, use `.codex/skills/frontend-coding-standards`.
 - If the task touches Next.js route structure, App Router organization, route groups, layouts, loading boundaries, metadata, or overall app layout architecture, use `.codex/skills/nextjs-app-architecture`.
 - If the task touches shared UI primitives, design tokens, component variants, visual consistency, or design-system structure, use `.codex/skills/ui-design-system`.
@@ -168,6 +171,7 @@ No work is complete if any relevant gate is missing:
 - If the task touches forms, client validation, submission UX, field errors, pending states, or mutation-oriented user input flows, use `.codex/skills/forms-validation-ux`.
 - If the task touches frontend data fetching, server state, client state, TanStack Query, Zustand, cache strategy, or server-versus-client data flow decisions, use `.codex/skills/frontend-data-fetching-state-management`.
 - If the task touches API client design, typed frontend contracts, fetch wrappers, axios wrappers, backend contract consumption, or frontend DTO mapping, use `.codex/skills/frontend-api-client-contracts`.
+- If the task is a data-driven frontend feature, combine `.codex/skills/frontend-api-client-contracts`, `.codex/skills/frontend-data-fetching-state-management`, and the relevant backend skill instead of building a disconnected UI shell.
 - If the task touches auth state in the frontend, cookie-based sessions, permission-aware UI, protected experiences, login flows, or session expiry handling, use `.codex/skills/frontend-auth-session-permission-integration`.
 - If the task touches routing guards, middleware, redirects, protected navigation, public/private route grouping, or route access flow, use `.codex/skills/routing-navigation-middleware-guards`.
 - If the task touches frontend error states, retries, resilience, route-level fallbacks, degraded UX, or recovery flows, use `.codex/skills/frontend-error-handling-resilience`.

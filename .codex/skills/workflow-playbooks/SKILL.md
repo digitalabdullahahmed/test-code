@@ -48,6 +48,16 @@ Do not improvise the order of work when a standard playbook fits.
 4. implement UI, data flow, loading, and error states
 5. verify accessibility, responsiveness, and build
 
+### Full-stack data feature
+
+1. identify the user flow and required data states
+2. confirm or define the contract and affected shared types
+3. implement or update the backend path first if it does not already exist
+4. verify backend behavior independently
+5. implement frontend client, mapping, and UI states against the real contract
+6. verify loading, empty, error, auth, and success behavior with real integration
+7. summarize any deferred scope explicitly instead of hiding it behind fake data
+
 ### SEO work
 
 1. classify the page as public, private, or low-value
