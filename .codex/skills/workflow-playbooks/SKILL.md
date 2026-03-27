@@ -50,6 +50,12 @@ For multi-layer requests, combine this with `engineering-team-orchestration`.
 4. implement UI, data flow, loading, and error states
 5. verify accessibility, responsiveness, and build
 
+For important frontend work, combine this with:
+- `ui-ux-research-thinking` before implementation
+- `frontend-design` when strong visual execution matters
+- `frontend-device-compatibility` for mobile and cross-device resilience
+- `frontend-usability-design-qa` before completion
+
 ### Full-stack data feature
 
 1. identify the user flow and required data states

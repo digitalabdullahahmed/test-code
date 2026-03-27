@@ -24,12 +24,14 @@ Design interfaces that are not only attractive, but also understandable, efficie
 
 - user goals and task context
 - information hierarchy
+- navigation and information architecture
 - empty, loading, success, and failure states
 - form friction and error recovery
 - trust and clarity in critical flows
 - discoverability of key actions
 - consistency with the rest of the product
 - accessibility and inclusivity as UX, not only compliance
+- language and microcopy clarity
 
 ## Research rules
 
@@ -39,6 +41,8 @@ Design interfaces that are not only attractive, but also understandable, efficie
 - choose defaults that help the user complete the task safely
 - keep terminology concrete and predictable
 - when a flow is high-risk, design for confirmation, recovery, and visibility
+- make the primary action obvious within seconds
+- favor progressive disclosure over dumping every option at once
 
 ## Review checklist
 

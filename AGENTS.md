@@ -63,7 +63,7 @@ Use it as follows:
 - `00-*` priority and decision rules first
 - `10-*` execution workflow rules second
 - `11-*` to `19-*` for research, dependencies, impact, `Context7`, real-implementation discipline, full-stack integration, request understanding, decomposition, and acceptance criteria
-- `20-*` to `24-*` for concern-specific implementation, module-boundary rules, and full-stack feature rules next
+- `20-*` to `26-*` for concern-specific implementation, module-boundary rules, full-stack feature rules, UI state rules, and microcopy rules next
 - `30-*` to `34-*` for quality, security, release, and breaking-change gates before finishing
 - `40-*` to `42-*` for reviews, documentation expectations, and handoff discipline
 - `50-*` and `60-*` for done criteria and placement discipline
@@ -94,8 +94,11 @@ Use it as follows:
 - Keep feature logic inside `modules/`.
 - Prefer Server Components by default.
 - Use `use client` only when the feature truly requires it.
+- Prefer derived state over duplicated or contradictory state.
 - Keep API access centralized.
 - Build with accessibility, responsive behavior, and performance in mind from the start.
+- Require clear loading, empty, success, and error states for meaningful interactions.
+- Require clear microcopy, strong hierarchy, and an obvious primary action.
 - Avoid generic AI-looking UI. Use clear visual direction, deliberate typography, and meaningful motion.
 
 ## SEO standards
@@ -125,6 +128,7 @@ No work is complete if any relevant gate is missing:
 - confirmation that data-driven frontend changes are connected to a real backend contract and verified accordingly
 - confirmation that the delivered result matches the actual requested outcome, not only a partial technical interpretation
 - cross-layer handoff and integration review for multi-surface tasks
+- usability, async state, and microcopy review for meaningful frontend changes
 
 ## Thinking rules
 
@@ -171,6 +175,7 @@ No work is complete if any relevant gate is missing:
 - If the task touches frontend coding style, naming, file organization, readability, comment quality, or maintainability standards in Next.js or React code, use `.codex/skills/frontend-coding-standards`.
 - If the task touches Next.js route structure, App Router organization, route groups, layouts, loading boundaries, metadata, or overall app layout architecture, use `.codex/skills/nextjs-app-architecture`.
 - If the task touches shared UI primitives, design tokens, component variants, visual consistency, or design-system structure, use `.codex/skills/ui-design-system`.
+- If the task touches labels, helper text, button text, empty states, error messages, confirmations, or product language in the UI, use `.codex/skills/ux-writing-and-microcopy`.
 - If the task touches React component boundaries, composition patterns, hooks, prop design, feature modules, or component maintainability, use `.codex/skills/component-architecture-patterns`.
 - If the task touches forms, client validation, submission UX, field errors, pending states, or mutation-oriented user input flows, use `.codex/skills/forms-validation-ux`.
 - If the task touches frontend data fetching, server state, client state, TanStack Query, Zustand, cache strategy, or server-versus-client data flow decisions, use `.codex/skills/frontend-data-fetching-state-management`.
@@ -205,5 +210,6 @@ No work is complete if any relevant gate is missing:
 - If the task touches frontend env management, public runtime config, build-time variables, browser-safe config exposure, or deployment-time frontend settings, use `.codex/skills/frontend-build-runtime-env-management`.
 - If the task touches frontend CI, CD, build gates, visual review pipelines, quality automation, or frontend deployment safety, use `.codex/skills/frontend-ci-cd-quality-gates`.
 - If the task asks for frontend review, frontend refactor, naming cleanup, UI maintainability improvements, or frontend code quality review, use `.codex/skills/frontend-code-review-refactor-standards`.
+- If the task needs a stronger frontend QA pass for usability, hierarchy, responsiveness, async states, copy, or design integrity before completion, use `.codex/skills/frontend-usability-design-qa`.
 - If the task asks for a distinctive, polished, non-generic page, component, or interface with strong visual direction, typography, motion, or atmosphere, use `.codex/skills/frontend-design`.
 - If the task needs stronger UI or UX reasoning, user-flow thinking, information hierarchy, interface research, or interaction tradeoff analysis before coding, use `.codex/skills/ui-ux-research-thinking`.

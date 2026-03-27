@@ -13,6 +13,7 @@ Use this skill whenever the task affects interactive UI, forms, overlays, naviga
 - semantic HTML comes first
 - keyboard access must work
 - focus behavior must be deliberate
+- use ARIA only when native semantics are insufficient
 
 ## Required concerns
 
@@ -23,6 +24,9 @@ Use this skill whenever the task affects interactive UI, forms, overlays, naviga
 - visible focus states
 - accessible error messaging
 - modal and overlay focus management
+- landmark structure
+- reduced-motion support
+- touch target usability
 
 ## Review checklist
 
@@ -32,3 +36,5 @@ Reject or fix:
 - keyboard traps
 - missing focus states
 - inaccessible status or error messaging
+- ARIA used as a substitute for correct HTML
+- interactions that depend only on color, hover, or motion

@@ -13,6 +13,7 @@ Use this skill whenever the task affects frontend speed, bundle size, hydration,
 - keep client bundles lean
 - optimize known hot paths
 - measure before and after when possible
+- treat mobile constraints as the default performance target
 
 ## Required concerns
 
@@ -22,6 +23,8 @@ Use this skill whenever the task affects frontend speed, bundle size, hydration,
 - image and font optimization
 - hydration cost
 - third-party script weight
+- cache and revalidation choices
+- streaming and suspense boundaries
 
 ## Review checklist
 
@@ -31,3 +34,5 @@ Reject or fix:
 - unnecessary hydration
 - poor image handling
 - expensive list rendering
+- unbounded third-party script cost
+- unclear cache behavior that forces unnecessary refetching or staleness
