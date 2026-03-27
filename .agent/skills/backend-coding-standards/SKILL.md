@@ -31,6 +31,7 @@ Use this skill whenever writing or reviewing backend code quality, naming, reada
 - avoid classes with too many unrelated responsibilities
 - prefer guard clauses over deep nesting
 - keep side effects visible
+- keep failure semantics visible; do not bury important operational behavior behind vague helpers
 
 ## Comment standards
 
@@ -54,3 +55,4 @@ Reject or fix:
 - comment noise
 - missing comments around non-obvious decisions
 - accidental architectural drift through convenience shortcuts
+- operationally important behavior hidden behind unclear abstraction names

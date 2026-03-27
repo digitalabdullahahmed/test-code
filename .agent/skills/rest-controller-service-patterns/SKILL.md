@@ -21,6 +21,7 @@ Use this skill whenever the task affects controller structure, service boundarie
 3. Delegate to an application use case or service.
 4. Persist or coordinate dependencies.
 5. Map output to API response shape.
+6. Ensure failures map into stable API semantics.
 
 ## Controller rules
 
@@ -43,3 +44,4 @@ Reject or fix:
 - generic mega-services
 - route handlers that know too much about persistence
 - application logic duplicated across endpoints
+- unstable or ad hoc failure mapping across similar endpoints

@@ -29,7 +29,9 @@ Use transactions for multi-write consistency.
 Rules:
 - keep them short
 - avoid remote calls inside them
+- remember that one transaction runs on one connection, so independent expensive work inside it does not become magically parallel
 - document duplicate and retry behavior where needed
+- prefer nested write patterns for dependent relational writes when the ORM supports them cleanly
 
 ## Query quality
 
@@ -39,6 +41,7 @@ Rules:
 - select only needed fields
 - use indexes aligned to the read path
 - measure critical queries
+- make connection and transaction usage predictable under load
 
 ## Review checklist
 
@@ -48,3 +51,4 @@ Reject or fix:
 - no transaction boundary for multi-write workflows
 - raw SQL with no explanation
 - query code that obviously over-fetches
+- remote calls or retry loops hidden inside transaction scopes

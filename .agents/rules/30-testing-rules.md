@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # Testing Rules
 
 - no high-risk change is complete without verification
@@ -12,4 +8,4 @@ trigger: always_on
 - always run the strongest realistic verification before claiming completion
 - use multiple verification methods when the change affects multiple layers
 - do not stop at one passing check if typecheck, tests, build, or route validation are also relevant
-
+- for data-driven features, verify the real backend-client flow rather than only isolated UI rendering

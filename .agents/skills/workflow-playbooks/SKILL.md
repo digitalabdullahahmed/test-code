@@ -23,6 +23,8 @@ Do not improvise the order of work when a standard playbook fits.
 6. verify with the right checks
 7. summarize outcome and remaining risks
 
+For multi-layer requests, combine this with `engineering-team-orchestration`.
+
 ### Bug fix
 
 1. identify failing behavior precisely
@@ -38,7 +40,8 @@ Do not improvise the order of work when a standard playbook fits.
 3. define DTOs, errors, and persistence changes
 4. implement module code
 5. add tests and docs as needed
-6. verify typecheck and build
+6. review operational reliability, timeouts, and failure behavior where relevant
+7. verify typecheck and build
 
 ### Frontend page or feature
 
@@ -47,6 +50,22 @@ Do not improvise the order of work when a standard playbook fits.
 3. decide server versus client responsibilities
 4. implement UI, data flow, loading, and error states
 5. verify accessibility, responsiveness, and build
+
+For important frontend work, combine this with:
+- `ui-ux-research-thinking` before implementation
+- `frontend-design` when strong visual execution matters
+- `frontend-device-compatibility` for mobile and cross-device resilience
+- `frontend-usability-design-qa` before completion
+
+### Full-stack data feature
+
+1. identify the user flow and required data states
+2. confirm or define the contract and affected shared types
+3. implement or update the backend path first if it does not already exist
+4. verify backend behavior independently
+5. implement frontend client, mapping, and UI states against the real contract
+6. verify loading, empty, error, auth, and success behavior with real integration
+7. summarize any deferred scope explicitly instead of hiding it behind fake data
 
 ### SEO work
 

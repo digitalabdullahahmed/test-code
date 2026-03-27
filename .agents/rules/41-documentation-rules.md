@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # Documentation Rules
 
 - update documentation whenever the change alters setup, architecture, behavior, contracts, runtime requirements, or operational expectations
@@ -10,4 +6,3 @@ trigger: always_on
 - document non-obvious design choices, cross-module constraints, and operational caveats
 - ensure generated docs such as OpenAPI, metadata helpers, or Storybook config remain aligned with the code
 - when introducing a new dependency, service, queue, env var, or workflow, document how it is used and why it exists
-

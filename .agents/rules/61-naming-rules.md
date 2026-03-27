@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # Naming Rules
 
 - use business language first
@@ -10,4 +6,3 @@ trigger: always_on
 - hooks start with `use`
 - methods use clear verbs
 - avoid vague names like `Helper`, `Manager`, `Processor`, `DataService`, or `Util`
-

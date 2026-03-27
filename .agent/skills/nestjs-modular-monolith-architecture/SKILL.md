@@ -227,6 +227,20 @@ Always consider:
 - replay or duplicate-submission risk
 - data exposure risk in logs and responses
 
+## Operational reliability
+
+Every serious backend module should remain operationally understandable.
+
+Required concerns:
+- startup config validation
+- graceful shutdown behavior
+- readiness and dependency health
+- bounded request behavior
+- timeout and retry discipline for outbound work
+- background processing for slow or retry-heavy side effects
+
+Do not leave runtime behavior to accidental defaults when the path is important.
+
 ## API behavior and error handling
 
 Backend behavior should be predictable.

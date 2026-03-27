@@ -19,6 +19,7 @@ Use this skill whenever the task affects input validation, output shaping, reque
 Rules:
 - validate body, params, query, and headers where relevant
 - reject unknown or dangerous fields where appropriate
+- use consistent parsing and coercion rules intentionally, not accidentally
 - normalize parsing rules consistently
 - keep DTOs small and explicit
 - separate create and update DTOs unless the contract is truly identical
@@ -41,6 +42,7 @@ Required behavior:
 - explicit not-found and conflict errors
 - safe internal error handling
 - correlation-friendly error logging
+- machine-readable error codes where the API surface benefits from them
 
 ## NestJS guidance
 
@@ -54,6 +56,7 @@ Avoid:
 - ad hoc try-catch blocks in every controller
 - controllers manually building many inconsistent error shapes
 - leaking persistence exceptions directly
+- mixing transport validation, business rules, and persistence exceptions into one vague failure path
 
 ## Review checklist
 

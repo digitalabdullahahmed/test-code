@@ -41,6 +41,8 @@ Track when possible:
 - queue health
 - dependency health
 - database connection stress
+- timeout and retry behavior on critical outbound dependencies
+- startup and readiness failures where operationally important
 
 ## Review checklist
 
@@ -50,3 +52,4 @@ Reject or fix:
 - secrets or PII in logs
 - no health check visibility
 - no signal for production diagnosis
+- no visibility into dependency-driven degradation or retry storms

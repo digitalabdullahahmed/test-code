@@ -78,7 +78,7 @@ The direction matters less than the discipline of execution.
 
 Default structure for a serious Next.js app:
 - `app/` for routes, layouts, route groups, loading, error, and metadata
-- `src/features/` for feature-specific components, hooks, schemas, and orchestration
+- `src/modules/` for feature-specific components, hooks, schemas, and orchestration
 - `src/components/` for shared presentational building blocks
 - `src/lib/` for API clients, auth helpers, utilities, and shared config
 - `src/styles/` for tokens, globals, and thematic foundations
@@ -159,6 +159,12 @@ Avoid:
 - duplicated sources of truth
 - hidden mutation side effects
 
+State quality rules:
+- prefer derived state over duplicated state
+- avoid contradictory state flags that can drift out of sync
+- normalize state shape when multiple values describe the same workflow
+- keep form, query, and URL state aligned when they represent the same user intent
+
 ## Forms and validation
 
 Production-grade forms must include:
@@ -187,6 +193,8 @@ Rules:
 - define typed response expectations
 - handle loading, empty, success, and error states
 - make cache and revalidation behavior explicit
+- make server versus client fetching decisions explicit
+- make suspense, streaming, and revalidation decisions deliberate where the route benefits from them
 - align frontend contracts with backend DTOs and API documentation
 
 When integrating auth:
@@ -225,6 +233,34 @@ Review interactive components for:
 - escape handling for overlays
 - screen-reader-friendly labels
 - disabled state semantics
+- motion reduction preferences
+- touch target usability
+- landmark and navigation clarity
+
+## UI states and feedback
+
+Every meaningful flow should define:
+- idle state
+- loading state
+- empty state
+- success state
+- recoverable error state
+
+Rules:
+- keep feedback timely and specific
+- do not leave users guessing whether an action succeeded
+- preserve recoverable input where possible
+- destructive or high-risk actions need confirmation and visible outcome feedback
+
+## Content clarity
+
+Frontend quality is not only visual.
+
+Rules:
+- labels and actions must be specific
+- empty states should explain what to do next
+- error messages should support recovery
+- visual polish must not hide weak copy or weak information hierarchy
 
 ## Styling and design system
 
@@ -256,6 +292,8 @@ Frontend performance standards:
 - optimize images and fonts
 - avoid excessive re-renders caused by poor state boundaries
 - paginate or virtualize large collections when needed
+- reduce third-party script weight
+- make mobile performance a first-class constraint
 
 Review:
 - bundle-heavy dependencies

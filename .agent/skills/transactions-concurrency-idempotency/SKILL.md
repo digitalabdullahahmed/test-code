@@ -21,6 +21,7 @@ Use this skill whenever the task affects multi-step writes, race conditions, ret
 - duplicate submission protection
 - idempotency for retry-prone endpoints
 - replay-safe external side effects
+- separation between transactional database work and post-commit side effects
 
 ## Review checklist
 
@@ -29,3 +30,4 @@ Reject or fix:
 - duplicate-prone endpoints with no protection
 - race-sensitive updates with no concurrency strategy
 - retries that can produce double side effects
+- external side effects triggered inside fragile transaction scopes with no recovery thinking

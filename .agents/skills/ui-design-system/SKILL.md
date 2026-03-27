@@ -25,12 +25,14 @@ Use this skill whenever the task affects shared UI components, primitives, token
 ## Required concerns
 
 - color, spacing, radius, typography, and motion tokens
+- density and sizing scales
 - button, input, modal, card, table, and form primitives
 - variant strategy
 - accessible states
 - desktop and mobile behavior
 - display and body font strategy
 - background, border, and surface language
+- reduced-motion behavior and interaction consistency
 
 ## Review checklist
 
@@ -42,3 +44,4 @@ Reject or fix:
 - inaccessible component states
 - generic typography with no visual intent
 - motion behavior with no system rules
+- token scales that do not work across density or device contexts

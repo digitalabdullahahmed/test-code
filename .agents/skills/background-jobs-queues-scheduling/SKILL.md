@@ -39,6 +39,7 @@ At minimum, define:
 - idempotency strategy
 - logging and alerting expectations
 - job ownership and purpose
+- worker shutdown and in-flight job behavior where relevant
 
 ## Review checklist
 
@@ -48,3 +49,4 @@ Reject or fix:
 - no idempotency thinking
 - oversized unstable payloads
 - scheduled work with no monitoring
+- workers with unclear shutdown or duplicate-processing behavior

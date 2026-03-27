@@ -21,6 +21,7 @@ Use this skill whenever the task affects business boundaries, aggregates, domain
 - policies
 - domain services when entity methods are insufficient
 - domain events when modules need decoupled reactions
+- invariants that survive transport, persistence, and concurrent access paths
 
 ## Review checklist
 
@@ -29,3 +30,4 @@ Reject or fix:
 - invariants enforced only at controller level
 - domain concepts flattened into generic CRUD code
 - business rules spread across unrelated modules
+- domain invariants that disappear under concurrent or cross-path execution

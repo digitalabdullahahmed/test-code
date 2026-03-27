@@ -124,6 +124,11 @@ Errors should clearly separate:
 - rate limit
 - unexpected internal failure
 
+Errors should also:
+- expose stable machine-readable codes where the API surface is serious enough to need them
+- distinguish user-correctable problems from internal failures
+- stay aligned with frontend recovery behavior and documentation
+
 Do not leak stack traces or raw ORM errors.
 
 ## OpenAPI alignment

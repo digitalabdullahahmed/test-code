@@ -30,6 +30,7 @@ Use this skill whenever the task affects backend performance, caching, hot paths
 - expensive serialization
 - chatty internal calls
 - unnecessary synchronous work
+- slow request paths that should be offloaded to queues or async processing
 
 ## Review checklist
 

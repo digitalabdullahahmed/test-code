@@ -31,6 +31,7 @@ Use this skill whenever the task affects backend security posture or needs a sec
 Consider:
 - secure headers where applicable
 - request size limits
+- request timeout strategy
 - file type and size validation
 - outbound allowlists for risky integrations
 - safe timeout defaults
@@ -46,3 +47,4 @@ Reject or fix:
 - no abuse controls on sensitive routes
 - outbound requests with no SSRF thinking
 - secrets in code or docs
+- no timeout or limit thinking on exposed risky paths

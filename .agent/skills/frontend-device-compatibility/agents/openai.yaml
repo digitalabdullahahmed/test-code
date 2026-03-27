@@ -1,0 +1,2 @@
+name: frontend-device-compatibility
+description: Build responsive, mobile-first Next.js frontends that behave well across screen sizes, input types, and device constraints.

@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # Review Rules
 
 Review order:
@@ -15,4 +11,3 @@ Review order:
 7. documentation drift
 
 Findings come before summaries.
-

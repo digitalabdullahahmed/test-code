@@ -29,6 +29,7 @@ Use:
 - conflict and not-found paths
 - persistence-critical edge cases
 - risky retry or idempotency paths where applicable
+- timeout, provider-failure, or degraded dependency paths where the feature depends on them
 
 ## Test data
 
@@ -46,3 +47,4 @@ Reject or fix:
 - fake database tests for persistence-critical logic
 - unreadable fixtures
 - unstable tests with hidden shared state
+- no verification for failure modes that the production path clearly depends on

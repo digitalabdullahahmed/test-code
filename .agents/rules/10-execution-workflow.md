@@ -1,7 +1,3 @@
----
-trigger: always_on
----
-
 # Execution Workflow
 
 Default execution sequence:

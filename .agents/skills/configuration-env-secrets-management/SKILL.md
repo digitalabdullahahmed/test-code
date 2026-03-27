@@ -22,6 +22,7 @@ Use this skill whenever the task affects environment variables, runtime config, 
 - `.env.example` or equivalent documentation
 - secret-safe logging
 - production-safe defaults or explicit required values
+- startup failure for invalid critical configuration instead of weak silent fallback
 
 ## Secrets
 
@@ -45,3 +46,4 @@ Reject or fix:
 - magic values scattered across modules
 - undocumented required configuration
 - unsafe defaults in production-sensitive settings
+- startup that can proceed with broken critical configuration
