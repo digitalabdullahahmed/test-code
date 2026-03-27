@@ -40,7 +40,8 @@ For multi-layer requests, combine this with `engineering-team-orchestration`.
 3. define DTOs, errors, and persistence changes
 4. implement module code
 5. add tests and docs as needed
-6. verify typecheck and build
+6. review operational reliability, timeouts, and failure behavior where relevant
+7. verify typecheck and build
 
 ### Frontend page or feature
 

@@ -63,7 +63,7 @@ Use it as follows:
 - `00-*` priority and decision rules first
 - `10-*` execution workflow rules second
 - `11-*` to `19-*` for research, dependencies, impact, `Context7`, real-implementation discipline, full-stack integration, request understanding, decomposition, and acceptance criteria
-- `20-*` to `26-*` for concern-specific implementation, module-boundary rules, full-stack feature rules, UI state rules, and microcopy rules next
+- `20-*` to `28-*` for concern-specific implementation, module-boundary rules, full-stack feature rules, UI state rules, microcopy rules, backend reliability, and outbound resilience next
 - `30-*` to `34-*` for quality, security, release, and breaking-change gates before finishing
 - `40-*` to `42-*` for reviews, documentation expectations, and handoff discipline
 - `50-*` and `60-*` for done criteria and placement discipline
@@ -84,6 +84,8 @@ Use it as follows:
 - Keep domain rules close to the domain that owns them.
 - Keep infrastructure concerns isolated.
 - Prefer explicit transactions, idempotency strategy, and observability on important flows.
+- Make outbound timeouts, retries, and degradation behavior explicit.
+- Fail fast on invalid critical configuration and think about graceful shutdown.
 - Do not treat `common` or `shared` as dumping grounds.
 - Use clear naming for files, classes, methods, and modules.
 - Add comments only when preserving reasoning, tradeoffs, or non-obvious constraints.
@@ -129,6 +131,7 @@ No work is complete if any relevant gate is missing:
 - confirmation that the delivered result matches the actual requested outcome, not only a partial technical interpretation
 - cross-layer handoff and integration review for multi-surface tasks
 - usability, async state, and microcopy review for meaningful frontend changes
+- operational reliability review for meaningful backend changes
 
 ## Thinking rules
 
@@ -166,6 +169,7 @@ No work is complete if any relevant gate is missing:
 - If the task touches Docker, container runtime behavior, local development containers, production containerization, health checks, runtime images, or service startup behavior, use `.codex/skills/docker-infrastructure-runtime`.
 - If the task touches CI, CD, pipelines, release safety, build verification, deployment workflows, or environment promotion, use `.codex/skills/ci-cd-release-deployment`.
 - If the task touches external APIs, webhooks, provider SDKs, integration retries, anti-corruption boundaries, or third-party integration reliability, use `.codex/skills/third-party-integrations`.
+- If the task touches startup behavior, graceful shutdown, health and readiness, request timeouts and limits, worker coordination, or backend runtime reliability, use `.codex/skills/backend-operational-reliability`.
 - If the task depends on current library or framework documentation, package selection, migration notes, setup steps, or version-specific API behavior, use `.codex/skills/context7-docs-research`.
 - If the task touches feature flags, runtime toggles, system settings, configurable behavior, or backend-managed product configuration, use `.codex/skills/feature-flags-settings-management`.
 - If the task spans backend, frontend, shared packages, testing, docs, or multiple role-like concerns at once, use `.codex/skills/engineering-team-orchestration`.

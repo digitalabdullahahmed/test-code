@@ -23,6 +23,8 @@ Use this skill whenever the backend talks to external providers or consumes webh
 - duplicate webhook protection
 - provider error mapping
 - observability for provider failures
+- bounded retries with backoff where justified
+- no blind retry for non-idempotent side effects
 
 ## Review checklist
 
@@ -32,3 +34,4 @@ Reject or fix:
 - no webhook authenticity checks
 - duplicate webhook side effects
 - weak failure visibility
+- retries that can duplicate unsafe side effects

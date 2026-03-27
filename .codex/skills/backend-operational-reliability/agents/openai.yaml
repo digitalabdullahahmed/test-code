@@ -1,0 +1,2 @@
+name: backend-operational-reliability
+description: Review and implement production-safe backend runtime behavior including health, readiness, graceful shutdown, timeouts, and operational safety.
