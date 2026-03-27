@@ -55,6 +55,7 @@ This repository is designed to grow into a production-grade system with strong a
 - [overview.md](/Client Projects/test-code/docs/architecture/overview.md): architecture summary
 - [tech-stack.md](/Client Projects/test-code/docs/architecture/tech-stack.md): backend, frontend, tooling, and planned stack decisions
 - [application-build-order.md](/Client Projects/test-code/docs/application-build-order.md): recommended order for building the product feature by feature
+- [how-to-use-project-next-step-guide.md](/Client Projects/test-code/docs/how-to-use-project-next-step-guide.md): simple guide for asking the AI what the correct next implementation step is
 - [context7-mcp.md](/Client Projects/test-code/docs/context7-mcp.md): `Context7` documentation workflow
 - [AGENTS.md](/Client Projects/test-code/AGENTS.md): central execution and quality rules for the coding agent
 
