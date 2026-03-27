@@ -23,6 +23,8 @@ Do not improvise the order of work when a standard playbook fits.
 6. verify with the right checks
 7. summarize outcome and remaining risks
 
+For multi-layer requests, combine this with `engineering-team-orchestration`.
+
 ### Bug fix
 
 1. identify failing behavior precisely

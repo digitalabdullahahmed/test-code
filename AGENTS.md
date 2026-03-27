@@ -53,6 +53,7 @@ The AI agent must behave like a disciplined senior engineer, not a code generato
 - For cross-cutting work, apply architecture skill first, then concern-specific skills.
 - For review tasks, use the appropriate review/refactor skill in addition to the concern skill.
 - For implementation tasks, use `.codex/skills/workflow-playbooks` to follow a repeatable execution path.
+- For multi-layer or ambiguous delivery tasks, use `.codex/skills/engineering-team-orchestration` to think and execute like a coordinated engineering team.
 
 ## Rules system
 
@@ -61,10 +62,10 @@ The repo includes `.codex/rules/` as a rulepack layer beneath this file.
 Use it as follows:
 - `00-*` priority and decision rules first
 - `10-*` execution workflow rules second
-- `11-*` to `16-*` for research, dependencies, impact, `Context7`, real-implementation discipline, and full-stack integration rules
+- `11-*` to `19-*` for research, dependencies, impact, `Context7`, real-implementation discipline, full-stack integration, request understanding, decomposition, and acceptance criteria
 - `20-*` to `24-*` for concern-specific implementation, module-boundary rules, and full-stack feature rules next
 - `30-*` to `34-*` for quality, security, release, and breaking-change gates before finishing
-- `40-*` and `41-*` for reviews and documentation expectations
+- `40-*` to `42-*` for reviews, documentation expectations, and handoff discipline
 - `50-*` and `60-*` for done criteria and placement discipline
 - `61-*` to `63-*` for naming, comments, and generated-file discipline during editing
 
@@ -122,6 +123,8 @@ No work is complete if any relevant gate is missing:
 - breaking-change review for contracts, schema, routes, env vars, and shared packages
 - confirmation that no placeholder or fake implementation remains in finished paths
 - confirmation that data-driven frontend changes are connected to a real backend contract and verified accordingly
+- confirmation that the delivered result matches the actual requested outcome, not only a partial technical interpretation
+- cross-layer handoff and integration review for multi-surface tasks
 
 ## Thinking rules
 
@@ -161,6 +164,7 @@ No work is complete if any relevant gate is missing:
 - If the task touches external APIs, webhooks, provider SDKs, integration retries, anti-corruption boundaries, or third-party integration reliability, use `.codex/skills/third-party-integrations`.
 - If the task depends on current library or framework documentation, package selection, migration notes, setup steps, or version-specific API behavior, use `.codex/skills/context7-docs-research`.
 - If the task touches feature flags, runtime toggles, system settings, configurable behavior, or backend-managed product configuration, use `.codex/skills/feature-flags-settings-management`.
+- If the task spans backend, frontend, shared packages, testing, docs, or multiple role-like concerns at once, use `.codex/skills/engineering-team-orchestration`.
 - If the task touches React, Next.js, frontend architecture, App Router, components, forms, client state, server state, accessibility, UI structure, auth-aware frontend behavior, frontend performance, or frontend testing, use `.codex/skills/react-nextjs-frontend`.
 - If the task needs a disciplined implementation path for new features, bug fixes, backend modules, frontend pages, SEO work, refactors, or reviews, use `.codex/skills/workflow-playbooks`.
 - If the task includes both frontend UI and backend data behavior, use `.codex/skills/workflow-playbooks` and follow the `Full-stack data feature` playbook instead of treating the frontend in isolation.
