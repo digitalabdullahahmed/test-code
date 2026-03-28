@@ -35,6 +35,13 @@ This file separates:
 - transaction and migration discipline
 
 ## Frontend
+- use shadncdn is ciritical 
+- use tailwaindcss is critical
+- use radix-ui is critical
+- mobile comptability is high prior 
+- productiopn ready 
+-dark - ligh mode is essenial 
+-resposive high end design
 
 ### Current
 
